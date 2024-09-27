@@ -7,11 +7,11 @@ import QtQml 2.15
 Page {
     width: screen.width
     height: screen.height
-    title: qsTr("Home")
+    title: qsTr("Sweet Home")
 
     WebEngineView {
         id:homepagewebengine
-        url: "https://dakboard.com/app?p=1a90cc0599c6a92cd8635b54142f031f"
+        url: "http://homeassistant.local:8123/sweet-home/0"
         anchors.fill: parent
 
         onContextMenuRequested: {
@@ -42,7 +42,7 @@ Page {
             z: 1
             color: "white"
             Label{
-                text: "Welcome to CoffeePlace, please wait..."
+                text: "Welcome to Home Assistant, please wait..."
                 anchors.centerIn: parent
                 font.pixelSize: AppTheme.menuTextSize
                 color: "black"

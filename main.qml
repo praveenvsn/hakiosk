@@ -10,7 +10,7 @@ ApplicationWindow {
     width: screen.width
     height: screen.height
     visible: true
-    title: qsTr("Coffee Place V1.0")
+    title: qsTr("Home Assistant Dashboard")
 
     function reboot()
     {
@@ -61,57 +61,7 @@ ApplicationWindow {
 
         Column {
             anchors.fill: parent
-
-            ItemDelegate {
-                text: qsTr("Slack")
-                font.pixelSize:AppTheme.menuTextSize
-                width: parent.width
-                icon.source: "/images/slack.svg"
-                onClicked: {
-                    stackView.push("Slack.qml")
-                    drawer.close()
-                }
-            }
-            ItemDelegate {
-                text: qsTr("Pomodoro Timer")
-                font.pixelSize:AppTheme.menuTextSize
-                width: parent.width
-                icon.source: "/images/timer.svg"
-                onClicked: {
-                    stackView.push("Timer.qml")
-                    drawer.close()
-                }
-            }
-            ItemDelegate {
-                text: qsTr("YouTube")
-                font.pixelSize:AppTheme.menuTextSize
-                width: parent.width
-                icon.source: "/images/youtube.svg"
-                onClicked: {
-                    stackView.push("YouTube.qml")
-                    drawer.close()
-                }
-            }
-            ItemDelegate {
-                text: qsTr("Movie Trailers")
-                font.pixelSize: AppTheme.menuTextSize
-                width: parent.width
-                icon.source: "/images/clapperboard.svg"
-                onClicked: {
-                    stackView.push("Trailers.qml")
-                    drawer.close()
-                }
-            }
-            ItemDelegate {
-                text: qsTr("World Radio")
-                font.pixelSize: AppTheme.menuTextSize
-                width: parent.width
-                icon.source: "/images/radio.svg"
-                onClicked: {
-                    stackView.push("Radio.qml")
-                    drawer.close()
-                }
-            }
+            
             ItemDelegate {
                 text: qsTr("Device Management")
                 font.pixelSize: AppTheme.menuTextSize
@@ -123,7 +73,7 @@ ApplicationWindow {
                 }
             }
             ItemDelegate {
-                text: qsTr("About CoffeePlace")
+                text: qsTr("About Home Assistant")
                 font.pixelSize: AppTheme.menuTextSize
                 width: parent.width
                 icon.source: "/images/profile.svg"

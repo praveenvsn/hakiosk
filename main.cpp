@@ -12,7 +12,7 @@
 int main(int argc, char *argv[])
 {
     qputenv("QT_IM_MODULE", QByteArray("qtvirtualkeyboard"));
-    QCoreApplication::setOrganizationName("CoffeePlace");
+    QCoreApplication::setOrganizationName("HomeAssistant");
     //register our form processor class as singleton as we dont want to create memory overheads
     QScopedPointer<QLocalDevice> singletonprocessor(new QLocalDevice);
     qmlRegisterSingletonInstance("com.company.localdevice", 1, 0, "LocalDevice", singletonprocessor.get()); //register our singleton

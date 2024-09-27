@@ -8,7 +8,7 @@ Page {
     width: screen.width
     height: screen.height
 
-    title: qsTr("About CoffeePlace")
+    title: qsTr("About Home Assistant")
 
     Rectangle {
         id: webViewPlaceholder
@@ -22,28 +22,11 @@ Page {
 
             Column{
                 Label{
-                    text: "Developer - Kuldeep Mann"
+                    text: "Developer - Praveen Satyanarayana"
                     font.pixelSize: AppTheme.menuTextSize
                     color: "black"
                 }
             }
-
-            Column{
-                Label{
-                    text: "Please do not forget to visit my youtube channel - Itchy Fingers"
-                    font.pixelSize: AppTheme.menuTextSize/2
-                    color: "black"
-                }
-            }
-
-            Column{
-                Label{
-                    text: "https://everythingembedded.blogspot.com/"
-                    font.pixelSize: AppTheme.menuTextSize/2
-                    color: "black"
-                }
-            }
-
         }
     }
 }
